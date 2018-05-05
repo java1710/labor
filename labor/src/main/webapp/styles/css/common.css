@@ -1,0 +1,1048 @@
+/*
+####################################################################
+#  名    称：应用开发中心CSS范例
+#  版本：1.0
+#  版权所有: 北京北控三兴信息技术有限公司
+#  制    作: 美工组
+#  说    明: 页面美化一律调用此文件，根据实际风格要求，修改现有样式；未涉及的样式请联系美工组或在本文尾部添加，添加时务必注明功能。
+####################################################################
+*/
+/*全局链接样式---TEXT-DECORATION的属性值可以为none、underline*/
+
+
+
+/*-----------------全局设置-----------------*/
+/*用于1套的滚动条设置，默认的全局页面样式---张静*/
+body
+{
+    margin: 0 0 0 0;
+	FONT-FAMILY: 宋体,Arial; FONT-SIZE: 9pt;
+	/*下面七行是滚动条的样式*/
+	scrollbar-arrow-color:#000000;
+	scrollbar-track-color:#EEEEEE;
+	scrollbar-highlight-color:#E4E8EA;
+	scrollbar-face-color:#E4E8EA;
+	scrollbar-Shadow-color:#E4E8EA;
+	scrollbar-3dlight-color:#FFFFFF;
+	scrollbar-darkshadow-color:#808080;
+	background-color: #ffffff;
+
+}
+
+
+
+
+/*用于1套，---张静*/
+/*全局表格内文字样式*/
+table,tr,td
+{
+	FONT-FAMILY: 宋体,Arial; 
+	FONT-SIZE: 9pt
+} 
+
+
+
+/*用于1套，---张静*/
+/*全局form边距，设置为零*/
+form
+{
+    margin: 0 0 0 0;
+}
+
+/*用于1套，---张静*/
+
+
+
+
+
+/*下拉选择框定义*/
+select 
+{
+	font:normal 9pt 宋体,Arial;/*字体*/
+	color: #393939;
+	background-color:#ffffff;/*背景颜色*/
+}
+
+/*全局输入域样式，影响单行输入域、多行输入域、单选框radio、复选框checkbox、默认按钮*/
+input,textarea 
+{
+	border:1px solid #D4D0C8;/*右边及下边线条颜色及粗细*/
+	border-top:1px solid #808080;/*上边线长及线条颜色*/
+	border-left:1px solid #808080;/*左边线条及线条颜色*/
+	font:normal 9pt 宋体,Arial;/*文字定义及字型*/
+	background-color:#ffffff;/*输入区的颜色*/
+	color: #393939;
+	
+	}
+
+/*-----------------字体链接-----------------*/
+
+/*用在全部页面，原来是：有链接时默认有下划线的黑色字，后经小智要求，改为有链接时默认连接字体为蓝色字。主要用于全部内容页--张静*/
+A:link {
+	FONT-SIZE: 9pt; COLOR: #017CCE; TEXT-DECORATION: none;
+}
+A:visited {
+	FONT-SIZE: 9pt; COLOR: #017CCE; TEXT-DECORATION: none;
+}
+A:active {
+	FONT-SIZE: 9pt; COLOR: #017CCE; TEXT-DECORATION: none;
+}
+A:hover {
+	FONT-SIZE: 9pt; COLOR: #64AFE1; TEXT-DECORATION: none;
+}
+
+
+
+/*用于亮蓝色版，用在首页的特色栏目链接灰字--张静*/
+.link1:link {
+	FONT-SIZE: 9pt; COLOR: #3C3838; TEXT-DECORATION: none;
+}
+.link1:visited {
+	FONT-SIZE: 9pt; COLOR: #3C3838; TEXT-DECORATION: none;
+}
+.link1:active {
+	FONT-SIZE: 9pt; COLOR: #3C3838; TEXT-DECORATION: none;
+}
+.link1:hover {
+	FONT-SIZE: 9pt; COLOR: #3C3838; TEXT-DECORATION: underline;
+}
+
+
+/*用于亮蓝色版，用在left栏目链接灰字--张静*/
+.link2:link {
+	FONT-SIZE: 9pt; COLOR: #505253; TEXT-DECORATION: none;
+}
+.link2:visited {
+	FONT-SIZE: 9pt; COLOR: #505253; TEXT-DECORATION: none;
+}
+.link2:active {
+	FONT-SIZE: 9pt; COLOR: #505253; TEXT-DECORATION: none;
+}
+.link2:hover {
+	FONT-SIZE: 9pt; COLOR: #505253; TEXT-DECORATION: underline;
+}
+
+
+
+
+/*用于1套，仅用在left左边的白色带链接字--张静*/
+.link01:link {
+	FONT-SIZE: 9pt; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.link01:visited {
+	FONT-SIZE: 9pt; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.link01:active {
+	FONT-SIZE: 9pt; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.link01:hover {
+	FONT-SIZE: 9pt; COLOR: #ffffff; TEXT-DECORATION: underline;
+}
+
+
+/*用于1套，仅用在right的淡蓝色子栏目带链接的字--张静*/
+.link02:link {
+	FONT-SIZE: 9pt; COLOR: #3A6EA1; TEXT-DECORATION: none;
+}
+.link02:visited {
+	FONT-SIZE: 9pt; COLOR: #3A6EA1; TEXT-DECORATION: none;
+}
+.link02:active {
+	FONT-SIZE: 9pt; COLOR: #3A6EA1; TEXT-DECORATION: none;
+}
+.link02:hover {
+	FONT-SIZE: 9pt; COLOR: #3A6EA1; TEXT-DECORATION: underline
+}
+
+
+/*用于1套，仅用在right的深蓝色栏目带链接的字--张静*/
+.link03:link {
+	FONT-SIZE: 9pt; COLOR: #013267; TEXT-DECORATION: none;
+}
+.link03:visited {
+	FONT-SIZE: 9pt; COLOR: #013267; TEXT-DECORATION: none;
+}
+.link03:active {
+	FONT-SIZE: 9pt; COLOR: #013267; TEXT-DECORATION: none;
+}
+.link03:hover {
+	FONT-SIZE: 9pt; COLOR: #013267; TEXT-DECORATION: underline;
+}
+
+
+/*用于1套，用在全部页面，有链接时默认无下划线的黑色字，主要用于全部内容页--张静*/
+.link04:link {
+	FONT-SIZE: 9pt;	COLOR: #000000;	TEXT-DECORATION: none;
+}
+.link04:visited {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none;
+}
+.link04:active {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none;
+}
+.link04:hover {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: underline;
+}
+
+
+A.news:visited {
+	FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(); WIDTH: 100%; COLOR: #000000; LINE-HEIGHT: 22px; BACKGROUND-REPEAT: repeat; HEIGHT: 22px; TEXT-DECORATION: none
+}
+A.news:active {
+	FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(); WIDTH: 100%; COLOR: #015eb5; LINE-HEIGHT: 22px; BACKGROUND-REPEAT: repeat; HEIGHT: 22px; BACKGROUND-COLOR: #fffae6; TEXT-DECORATION: none
+}
+A.news:hover {
+	FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(); WIDTH: 100%; COLOR: #015eb5; LINE-HEIGHT: 22px; BACKGROUND-REPEAT: repeat; HEIGHT: 22px; BACKGROUND-COLOR: #fffae6; TEXT-DECORATION: none
+}
+A.news:link {
+	FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(); WIDTH: 100%; COLOR: #000000; LINE-HEIGHT: 22px; BACKGROUND-REPEAT: repeat; HEIGHT: 22px; TEXT-DECORATION: none
+}
+
+
+/*----------------------------------*/
+
+/*用于1套，仅用在index首页的top部分--张静*/
+.mybg {
+    margin: 0 0 0 0;
+	FONT-FAMILY: 宋体,Arial; FONT-SIZE: 9pt;
+	/*下面七行是滚动条的样式*/
+	scrollbar-arrow-color:#000000;
+	scrollbar-track-color:#EEEEEE;
+	scrollbar-highlight-color:#E4E8EA;
+	scrollbar-face-color:#E4E8EA;
+	scrollbar-Shadow-color:#E4E8EA;
+	scrollbar-3dlight-color:#FFFFFF;
+	scrollbar-darkshadow-color:#808080;
+	background-color: #ffffff;
+	/*下面是与全局不同的背景色和背景图*/	
+	overflow:hidden;
+	background-image: url(no.gif);
+
+}
+
+/*用于1套，left页面和zyjp的left背景设置---张静*/
+.leftbg {
+	background-color: #ffffff;
+	FONT-FAMILY: "宋体"; FONT-SIZE: 9pt
+}
+
+
+
+
+
+/*用于1套，内容页上输入框的设置命令，小智要增加的---张静*/
+
+/*定义文字域没有背景没有边只显示字；如果要定义该文字域不让再输入可敲打字符，则需要在页面内加上代码：<input disabled>在input后面加disabled是不可输入的输入框；<select disabled>在select后面加disabled是不可选择的选择框*/
+/*下划线单行录入框样式 ，将 class="inputline" 添加到目标<input>处,*/
+.inputline
+{
+	border:none;/*这样无边框*/
+	/*下行中的线型可以是solid、dashed、dotted*/
+	/*border-top:1px solid #000000;这样上边框为1  solid为实线的意思*/
+	/*border-left:1px solid #000000;这样左边框为1 solid为实线的意思*/
+	/*border-bottom:1px solid #000000;这样底边框为1 solid为实线的意思*/
+	/*color:#000000;*/
+	font:normal 9pt 宋体,Arial;
+	background-color:transparent;/*这个是无背景色*/
+}
+/*用于1套，内容页上输入框的设置命令，樊颖要增加的---张静*/
+/*<input>的只能浏览不能更改，并有下划线显示,*/
+.inputlinea
+{
+	border:none;/*这样无边框*/
+	/*下行中的线型可以是solid、dashed、dotted*/
+	/*border-top:1px solid #000000;这样上边框为1  solid为实线的意思*/
+	/*border-left:1px solid #000000;这样左边框为1 solid为实线的意思*/
+	border-bottom:1px solid #000000;/*这样底边框为1 solid为实线的意思*/
+	/*color:#000000;*/
+	font:normal 9pt 宋体,Arial;
+	background-color:transparent;/*这个是无背景色*/
+}
+
+/*用于1套，---张静*/
+/*自定义选框样式，将 class="radio" 添加到单选框radio、复选框checkbox的<input>处，受上述"全局输入域样式"影响的单选框、多选框恢复其默认样式*/
+.radio
+{
+	border:none;
+    background-color:transparent;
+}
+
+
+/*用于1套，小智要增加的---张静*/
+.mask {
+	BEHAVIOR: expression(this.htcurl);
+	OVERFLOW: hidden ;
+	border: 1px #B7B7B7 solid;
+	font-family: "宋体",font-size: 12px; 
+	Helvetica, sans-serif ;
+	width: 20px;
+	word-wrap:normal;
+	word-wrap : break-word ;
+	word-break : keep-all ;
+	ime-mode:disabled;
+}
+
+
+/*--------------按钮用于1套内容页功能按钮--------------------*/
+/*--------------淡蓝按钮用于表单内需嵌入的按钮---------------*/
+/*淡蓝，2个汉字的按钮---张静*/
+.BUTTON2
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:35px;
+	height:16px;
+	background-image: url(button2.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+/*淡蓝，4个汉字的按钮---张静*/
+.BUTTON4
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:61px;
+	height:16px;
+	background-image: url(button4.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+/*淡蓝，6个汉字的按钮---张静*/
+.BUTTON6
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:90px;
+	height:16px;
+	background-image: url(button6.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+/*淡蓝，8个汉字的按钮---张静*/
+.BUTTON8
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:107px;
+	height:16px;
+	background-image: url(button8.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+/*淡蓝，10个汉字的按钮---张静*/
+.BUTTON10
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:130px;
+	height:16px;
+	background-image: url(button10.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+/*淡蓝，12个汉字的按钮---张静*/
+.BUTTON12
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:164px;
+	height:16px;
+	background-image: url(button12.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+/*--------------深蓝按钮用于表单外，页面内的最下方确定取消等按钮---------------*/
+/*深蓝，2个汉字的按钮---张静*/
+.BUTTONs2
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:35px;
+	height:16px;
+	background-image: url(buttons2.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+/*深蓝，3个汉字的按钮，用于二个字间加一个半小空格按钮---张静*/
+.BUTTONs3
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:43px;
+	height:16px;
+	background-image: url(buttons3.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+/*深蓝，4个汉字的按钮---张静*/
+.BUTTONs4
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:61px;
+	height:16px;
+	background-image: url(buttons4.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+/*深蓝，6个汉字的按钮---张静*/
+.BUTTONs6
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:90px;
+	height:16px;
+	background-image: url(buttons6.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+/*深蓝，8个汉字的按钮---张静*/
+.BUTTONs8
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:107px;
+	height:16px;
+	background-image: url(buttons8.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+/*深蓝，10个汉字的按钮---张静*/
+.BUTTONs10
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:130px;
+	height:16px;
+	background-image: url(buttons10.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+/*深蓝，12个汉字的按钮---张静*/
+.BUTTONs12
+{
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-RIGHT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-TOP: 3px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	FONT-SIZE: 9pt; 
+	width:164px;
+	height:16px;
+	background-image: url(buttons12.gif);
+	background-color:transparent;
+	color:#000000;
+	cursor:hand;
+}
+
+
+
+
+
+/*--------------细线--------------------*/
+
+
+/*下行样式用于限制表格单元格线为细线，用于内容页---张静*/
+/*说明：最简单细线表格，写发如下：<table width="100%" border="1" bordercolor="#000000" class="bordercollapse">*/
+.bordercollapse{
+	border-collapse:collapse;
+
+}
+
+
+/*细线表格列表样式，用在内容页---张静
+将 class="tablebody" 添加到目标<table  width="100%"  border="1"  bordercolor="#000000" class="tablebody">处
+将 class="tablehead" 添加到该table首行<tr>处，为表头样式*/
+.tablebody{
+	border-collapse:collapse;/*表格为细线*/
+	background-color:#FFFFFF;/*是背景颜色这里指表格线的颜色*/
+	font-family:宋体,Arial;
+	font-size:9pt;/*表格内字大小*/
+	color:#000000;/*表格内字的颜色为黑色*/
+	font-weight:normal;/*表格内字为正常字体*/
+}
+
+/*--------------tr背景设定--------------------*/
+
+
+
+/*tr背景：浅蓝，内容表格，限高20px---张静*/
+.line1{
+	padding-left:5px;/*tr左字边距的设定*/
+	background-color:#EEF6FD;/*tr背景颜色*/
+	font-family:宋体,Arial;
+	font-size:9pt;
+	color:#000000;
+	height:20px;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+
+/*tr背景：浅蓝，内容表格，表格不限大小---张静*/
+.line1a{
+	padding-left:5px;/*tr左字边距的设定*/
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	
+	background-color:#EEF6FD;/*tr背景颜色*/
+	font-family:宋体,Arial;
+	color:#000000;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+
+
+/*tr背景：浅白蓝色，内容表格，限高20px---张静*/
+.line2{
+
+	padding-left:5px;
+	background-color:#F6F9FD;
+	font-family:宋体,Arial;
+	font-size:9pt;
+	color:#000000;
+	height:20px;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+
+/*tr背景：浅白蓝色，内容表格，表格不限大小---张静*/
+.line2a{
+
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	background-color:#F6F9FD;
+	font-family:宋体,Arial;
+	color:#000000;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+/*tr背景：浅粉，内容表格，限高20px，用在职介的页面，用的不多---张静*/
+.line3{
+	padding-left:5px;
+	background-color:FCF6F4;
+	font-family:宋体,Arial;
+	font-size:9pt;
+	color:#000000;
+	height:20px;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+
+/*tr背景：淡蓝,比line1深点，内容表格限高20px，---张静*/
+.line4{
+	padding-left:5px;
+	background-color:DDECFA;
+	font-family:宋体,Arial;
+	font-size:9pt;
+	color:#000000;
+	height:20px;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+
+
+/*tr背景：淡蓝,比line1深点，内容表格，---张静*/
+.line4a{
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	background-color:DDECFA;
+	font-family:宋体,Arial;
+	color:#000000;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+
+
+/*--------------------------------right首页设置---------------------------------------------*/
+
+/*right大table的标题背景颜色___杨佳*/
+.line5{
+	padding-left:10px;
+	background-color:E2EAF4;
+	font-family:宋体,Arial;
+	color:#000000;
+	/*text-align:center;*/
+	/*下行中的字型可以是normal、bold*/
+	font-weight:normal;
+}
+
+
+
+
+
+
+/*right的大table的外边框线___杨佳*/
+.tablebody1{
+	border:1 solid #56B1E8;
+}
+
+
+
+
+/*right的主栏目条table的外边框线，配合.mbg使用成为主栏目条背景___杨佳*/
+.tablebody2{
+	border:1 solid #9DB2D9;
+}
+
+/*right主栏目条背景___杨佳*/
+.mbg{
+	background-color: #85B8E3;
+	background-image: url(../images/right/rt_2.jpg);
+	/*下行背景图重复方式可以是repeat-x、repeat-y、no-repeat*/
+	background-repeat: no-repeat;
+	/*下行背景图对齐方式可以是top、center、bottom、left、center、right*/
+	background-position: left top;
+}
+
+/*--------------------------------right首页设置结束---------------------------------------------*/
+
+/*--------------title背景设定，内容页抬头栏背景设置--------------------*/
+
+/*比2、3不同的是颜色较深，没有内容边距，和.titlehand不同的是没有手效果，其它完全一样--张静*/
+.title
+{
+	font-size:9pt;/*tr内字体*/
+	border-top: 1px solid #FFFFFF;/*tr上部分有一个白边*/
+	color: #000000;/*白字*/
+	font-family: 宋体;
+	/*下行中的字型可以是normal、bold*/
+	text-align:left;/*tr字体居中，居左为：left右为right，*/
+	height:20px;
+	/*font-weight:bold;/*tr字体加粗，*/
+	background-image: url(bb.gif);
+	
+}
+
+
+
+/*下行定义表格的标题栏(最上方tr)，这个和title是完全一样的，只是加了一个手效果，用在首页的折叠菜单内，其它的内容页面也有用到。*/
+.titlehand
+{
+	font-size:9pt;
+	border-top: 1px solid #FFFFFF;
+	color: #000000;
+	font-family: 宋体;
+	/*下行中的字型可以是normal、bold*/
+	text-align:left;
+	height:20px;
+	background-image: url(bb.gif);
+	cursor:hand;/*加手*/
+}
+
+
+
+/*下行定义表格的标题栏,的title一样，比1颜色要浅，和3一样，加了内容的左边距和顶边距，----张静*/
+.title2
+{
+	padding-left:5px;/*左边距5像素*/
+	padding-top:2px;/*顶边距2像素*/
+	font-size:9pt;/*9号字*/
+	border-top: 1px solid #FFFFFF;/*tr上部分有一个白边*/
+	color: #000000;/*黑字*/
+	font-family: 宋体;
+	/*下行中的字型可以是normal、bold*/
+	text-align:lieft;/*tr字体居中，居左为：left右为right，*/
+	height:20px;
+	background-image: url(bb2.gif);}
+
+/*背景图颜色比1颜色要浅，和2一样，不同的是字体为加粗黑字，----张静*/
+.title3
+{
+	padding-left:5px;
+	padding-top:2px;
+	font-size:9pt;/*tr内字体*/
+	border-top: 1px solid #FFFFFF;/*tr上部分有一个白边*/
+	color: #000000;
+	font-family: 宋体;
+	
+	/*下行中的字型可以是normal、bold*/
+	font-weight:bold;/*tr字体加粗，*/
+	text-align:lieft;/*tr字体居中，居左为：left右为right，*/
+	height:20px;
+	background-image: url(bb2.gif);
+}
+
+
+
+
+
+
+/*隐藏表格线，例如：要将一个两行两列的表格的"左下" "右下" "右上"三个单元个连通，则应该按如下方法添加：
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000" style="border-collapse:collapse">
+  <tr> 
+    <td>左上</td>
+    <td class="nobottomline">右上</td>
+  </tr>
+  <tr> 
+    <td class="norightline">左下</td>
+    <td class="noleftline notopline">右下</td>
+  </tr>
+</table>
+其他情况依次类推 */
+.norightline {
+	border-right: 0px none ;
+}
+.noleftline {
+	border-left: 0px none ;
+}
+.notopline {
+	border-top: 0px none ;
+}
+.nobottomline {
+	border-bottom: 0px none ;
+}
+/*下行样式用于隐藏单元格四边的表格线*/
+.noborder {
+	border: 0px none; 
+}
+
+/*隐藏表格线结束*/
+
+
+
+
+
+/*1套使用，限制背景图为不重复，用在左侧标题上，left有用到---张静*/
+.noreapt {
+	background-repeat: no-repeat;
+}
+
+
+
+
+/*高度设置，用于定制文字行间距或单元格的高度，如果需要其他高度值请在此处自行添加*/
+/*文字行间距，单位可以是%，em，px*/
+.lh200{
+	line-height:200%;
+}
+.lh150{
+	line-height:150%;
+}
+.lh120{
+	line-height:120%;
+}
+/*表格单元格高度，单位px*/
+.lh30px{
+    height:30px;
+}
+.lh25px{
+    height:25px;
+}
+.lh20px{
+    height:20px;
+}
+/*高度设置结束*/
+
+
+
+/*备选颜色，可应用于文字*/
+.white {color: #FFFFFF;}			/*白色*/
+.orenge {color: #FF6600;}			/*橙色*/
+.lightred {color: #FF6666;}			/*浅红*/
+.redtxt{color: #FF0000;}			/*红色*/
+.alittledarkred {color: #CC0000;}	/*深红*/
+.graytxt{color: #666666;}			/*灰色*/
+.blue {color: #3366FF;}				/*蓝色*/
+.darkblue {color: #3366CC;}			/*深蓝*/
+/*深墨蓝色粗体字，用在首页内容栏目字*/
+.darkblue2 {color: #013267;}		/*深墨蓝*/　
+.darkblue3 {color: #3A6EA1;}		/*深蓝*/
+.darkgreen {color: #336633;}		/*深绿*/
+
+
+
+
+
+
+.hand{cursor:hand;}/*手效果*/
+
+
+/*1套用到，用于职业介绍右下角边内容的背景图，用到的不多--张静*/
+.rightbj01 {
+	background-attachment: fixed;
+	background-image: url(../images/right/zyjs/01_beijing.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+
+/*字体大小粗细定义开始*/
+.pt16c
+{
+	FONT-FAMILY: "宋体",Arial; 
+	FONT-SIZE: 16pt;
+	font-weight:bold;
+	LINE-HEIGHT: 150%
+} 
+.pt11
+{
+	FONT-FAMILY: "宋体",Arial; 
+	FONT-SIZE: 11pt;
+	LINE-HEIGHT: 150%
+} 
+/*字体大小粗细定义结束*/
+
+/*字体间距对齐开始*/
+.zjj34 {
+	letter-spacing: 6px;
+}
+
+
+.zjj56 {
+	letter-spacing: 3px;
+}
+
+.zjj78 {
+	letter-spacing: 2px;
+}
+
+.zjj90 {
+	letter-spacing: 4px;
+}
+/*字体间距对齐结束*/
+
+
+/*英文数字或单词强制换行*/
+.wordbreak {
+	WORD-BREAK: break-all;/*英文强制换行*/
+	WORD-WRAP: break-word;/*数字强制换行*/
+}
+
+
+.wordkeep {
+	WORD-BREAK: keep-all;/*英文数字不换行*/
+	WORD-WRAP: normal;
+}
+
+/*___________________________二套新增_____________________________*/
+
+
+
+/*用于2套，left2快捷工具背景图及颜色设置--张静_*/
+.leftbgtd1 {
+	background-color: #769FB9;
+	background-image: url(../images/left/b_1.jpg);
+	/*下行背景图重复方式可以是repeat-x、repeat-y、no-repeat*/
+	background-repeat: repeat-x;
+	/*下行背景图对齐方式可以是top、center、bottom、left、center、right*/
+	background-position: left top;
+}
+
+
+/*用于2套，left2快捷工具背景图左边的蓝色白底园角--张静_*/
+.lefttd1_1 {
+	background-image: url(../images/left/b_2.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+/*用于2套，left2快捷工具深蓝带链接字--张静_*/
+.kjgj {	FONT-SIZE: 9pt;color: 003060;	text-decoration: none;line-height: 180%;
+}
+.kjgj:link {
+	FONT-SIZE: 9pt; COLOR: #003060; TEXT-DECORATION: none;line-height: 180%;
+}
+.kjgj:visited {
+	FONT-SIZE: 9pt; COLOR: #003060; TEXT-DECORATION: none;line-height: 180%;
+}
+.kjgj1:active {
+	FONT-SIZE: 9pt; COLOR: #003060; TEXT-DECORATION: none;line-height: 180%;
+}
+.kjgj:hover {
+	FONT-SIZE: 9pt; COLOR: #396D8C; TEXT-DECORATION: none;line-height: 180%;
+}
+
+/*用于2套，left2我的工作淡蓝带链接栏目名字--张静_*/
+.zi1 {FONT-SIZE: 9pt;color: 0E86C2;text-decoration: none;line-height: 180%;
+}
+.zi1:link {
+	FONT-SIZE: 9pt; COLOR: #0E86C2; TEXT-DECORATION: none;line-height: 180%;
+}
+.zi1:visited {
+	FONT-SIZE: 9pt; COLOR: #0E86C2; TEXT-DECORATION: none;line-height: 180%;
+}
+.zi1:active {
+	FONT-SIZE: 9pt; COLOR: #0E86C2; TEXT-DECORATION: none;line-height: 180%;
+}
+.zi1:hover {
+	FONT-SIZE: 9pt; COLOR: #46ABDE; TEXT-DECORATION: none;line-height: 180%;
+}
+
+/*用于2套，left2我的工作三级栏目带链接栏目名字--张静_*/
+.zi2 {FONT-SIZE: 9pt;color: 0D5F88;text-decoration: none;line-height: 140%;
+}
+.zi2:link {
+	FONT-SIZE: 9pt; COLOR: #0D5F88; TEXT-DECORATION: none;line-height: 140%;
+}
+.zi2:visited {
+	FONT-SIZE: 9pt; COLOR: #0D5F88; TEXT-DECORATION: none;line-height: 140%;
+}
+.zi2:active {
+	FONT-SIZE: 9pt; COLOR: #0D5F88; TEXT-DECORATION: none;line-height: 140%;
+}
+.zi2:hover {
+	FONT-SIZE: 9pt; COLOR: #0E86C2; TEXT-DECORATION: none;line-height: 140%;
+}
+
+/*右边距5像素*/
+.right5 {
+padding-right:5px;/*右边距5像素*/
+
+}
+/*左边距5像素*/
+.left5 {
+padding-left:5px;/*右边距5像素*/
+
+}
+
+
+
+
+/*弹出窗口背景设置：上背景*/
+.tcckb1 {
+	background-attachment: fixed;
+	background-image: url(../images/right/tcck/b_1.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+
+/*弹出窗口背景设置：下背景*/
+.tcckb2 {
+	background-attachment: fixed;
+	background-image: url(../images/right/tcck/b_2.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+/*_罗浩加鼠标悬浮效果_*/
+/*鼠标放在td上时td换背景颜色，但必须配合着my.htc，那个文件是具体的设置*/
+.overtd {
+	FONT-SIZE: 9pt;color:#ffffff;TEXT-DECORATION: none; BEHAVIOR: url(styles/1/css/my.htc);cursor:hand;
+}
+
+/*用来设罢输出的的打印数据项有下划线*/
+.underline {
+	TEXT-DECORATION: underline;
+}
+
+
+
+

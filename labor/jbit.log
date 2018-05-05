@@ -1,0 +1,8 @@
+2018-04-19 14:20:46 JakartaCommonsLoggingImpl.java DEBUG Logging initialized using 'org.mybatis.generator.logging.commons.JakartaCommonsLoggingLogFactory@4ec6a292' adapter.
+  2018-04-19 14:20:46 JakartaCommonsLoggingImpl.java DEBUG Retrieving column information for table "ldlsc_user"
+  2018-04-19 14:20:46 JakartaCommonsLoggingImpl.java DEBUG Found column "user_id", data type 12, in table "ldlsc..ldlsc_user"
+  2018-04-19 14:20:46 JakartaCommonsLoggingImpl.java DEBUG Found column "USER_NAME", data type 12, in table "ldlsc..ldlsc_user"
+  2018-04-19 14:20:46 JakartaCommonsLoggingImpl.java DEBUG Found column "USERLOGINNAME", data type 12, in table "ldlsc..ldlsc_user"
+  2018-04-19 14:20:46 JakartaCommonsLoggingImpl.java DEBUG Found column "USERPASSWORD", data type 12, in table "ldlsc..ldlsc_user"
+  2018-04-19 14:20:46 JakartaCommonsLoggingImpl.java DEBUG Found column "USERINDEX", data type 12, in table "ldlsc..ldlsc_user"
+  

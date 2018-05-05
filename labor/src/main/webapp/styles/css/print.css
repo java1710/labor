@@ -1,0 +1,185 @@
+/*
+####################################################################
+#  名    称：应用开发中心CSS范例
+#  版本：1.0
+#  版权所有: 北京北控三兴信息技术有限公司
+#  制    作: 美工组
+#  说    明: 
+打印页面美化一律调用此文件，根据实际风格要求，修改现有样式；
+未涉及的样式请联系美工组或在本文尾部添加，添加时务必注明功能。
+####################################################################
+*/
+
+/*全局页面样式，包括页边距、字体、滚动条样式、网页背景*/
+body
+{
+    margin: 0 0 0 0;
+	SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+	SCROLLBAR-SHADOW-COLOR: buttonface;
+	SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+	SCROLLBAR-TRACK-COLOR: #eeeeee;
+	SCROLLBAR-DARKSHADOW-COLOR: buttonshadow;
+	background-color:#ffffff;
+
+}
+
+
+
+/*全局表格内文字样式*/
+table,tr,td
+{
+	FONT-FAMILY: 宋体,Arial; 
+	FONT-SIZE: 10pt;
+    text-align:center;
+	line-height: 150%;
+} 
+
+
+/*最简单细线表格，写发如下：
+<table width="100%" border="1" bordercolor="#000000"  class="bordercollapse">
+*/
+/*下行样式用于限制表格单元格线为细线*/
+.bordercollapse{
+	border-collapse:collapse;
+
+}
+
+
+
+/*隐藏表格线，例如：要将一个两行两列的表格的"左下" "右下" "右上"三个单元个连通，则应该按如下方法添加：
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000" style="border-collapse:collapse">
+  <tr> 
+    <td>左上</td>
+    <td class="nobottomline">右上</td>
+  </tr>
+  <tr> 
+    <td class="norightline">左下</td>
+    <td class="noleftline notopline">右下</td>
+  </tr>
+</table>
+其他情况依次类推 */
+.norightline {
+	border-right: 0px none ;
+}
+.noleftline {
+	border-left: 0px none ;
+}
+.notopline {
+	border-top: 0px none ;
+}
+.nobottomline {
+	border-bottom: 0px none ;
+}
+/*下行样式用于隐藏单元格四边的表格线*/
+.noborder {
+	border: 0px none; 
+}
+
+
+/*隐藏表格线结束*/
+
+
+
+
+
+/*英文数字或单词强制换行*/
+.wordbreak {
+	WORD-BREAK: break-all;
+	WORD-WRAP: break-word;
+}
+
+
+.wordkeep {
+	WORD-BREAK: keep-all;
+}
+
+
+/*高度设置，用于定制文字行间距或单元格的高度，如果需要其他高度值请在此处自行添加*/
+/*文字行间距，单位可以是%，em，px*/
+.lh200{
+	line-height:200%;
+}
+.lh150{
+	line-height:150%;
+}
+.lh120{
+	line-height:120%;
+}
+/*表格单元格高度，单位px*/
+.lh30px{
+    height:30px;
+}
+.lh25px{
+    height:25px;
+}
+.lh20px{
+    height:20px;
+}
+/*高度设置结束*/
+
+
+.pt10
+{
+	FONT-FAMILY: "宋体", Arial; 
+	FONT-SIZE: 10pt;
+	line-height: 150%;
+} 
+.pt10c
+{
+	FONT-FAMILY: "宋体", Arial; 
+	FONT-SIZE: 10pt;
+	font-weight:bold;
+} 
+
+
+
+.pt12
+{
+	FONT-FAMILY: "宋体", "Arial";
+	FONT-SIZE: 12pt;
+	line-height: 150%;
+
+} 
+.pt12c
+{
+	FONT-FAMILY:"宋体",Arial; 
+	FONT-SIZE: 12pt;
+	font-weight:bold;
+} 
+
+.pt15
+{
+	FONT-FAMILY: "宋体",Arial; 
+	FONT-SIZE: 15pt;
+	line-height: 150%;
+} 
+
+.pt15c
+{
+	FONT-FAMILY: "宋体",Arial; 
+	FONT-SIZE: 15pt;
+	font-weight:bold;
+	line-height: 150%;
+} 
+
+
+
+.pt22c
+{
+	FONT-FAMILY: "宋体",Arial; 
+	FONT-SIZE: 22pt;
+	font-weight:bold;
+} 
+
+
+
+
+.left
+{
+	text-align:left;
+} 
+
+.right
+{
+	text-align:right;
+} 

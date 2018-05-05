@@ -1,0 +1,50 @@
+/*ctreetable.css样式定义如下 */
+/*-----add by Nicholas for dtreetable-----*/
+.dtreetable {
+ font-size:12px;
+ white-space: nowrap;
+}
+
+.dtreetable img {
+ border: 0px;
+ vertical-align: middle;
+}
+.dtreetable a {
+ color: #333;
+ text-decoration: none;
+}
+.dtreetable a:hover {
+ color: #FF0000;
+ text-decoration: underline;
+}
+.dtreetable .clip {
+ overflow: hidden;
+}
+
+
+/*-----add by Nicholas for dtree tr-------*/
+.dtreetable tr.titlerow {
+    background-color:#6595d6;
+}
+.dtreetable tr.row, .dtreetable tr.rowSel {
+ white-space: nowrap;
+}
+.dtreetable tr.row {
+    background-color:#FFFFFF;
+}
+.dtreetable tr.rowSel {
+    background-color:#FFFFFF;
+}
+.dtreetable td.node, td.nodeSel {
+ font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ padding-left:8px;
+}
+.dtreetable, .dtreetable td.node {
+    background-color: #F6F9FD;
+}
+.dtreetable td.nodeSel {
+ background-color: #F6F9FD;
+}
+
+ 

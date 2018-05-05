@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+
+	<!-- 数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+		<property name="username" value="root"></property>
+		<property name="password" value="tiger"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/ldlsc"></property>
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+	</bean>
+
+	<!-- 事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<!-- mybatis的SqlSessionFactoryBean -->
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 映射文件所在的位置 -->
+		<property name="mapperLocations" value="classpath*:com/oracle/labor/mapper/*.xml"></property>
+		<property name="typeAliasesPackage" value="com.oracle.labor.po"></property>
+		<property name="configurationProperties">
+			<props>
+				<prop key="logImpl">LOG4J</prop>
+			</props>
+		</property>
+
+
+		<!-- 配置分页插件 -->
+		<property name="plugins">
+			<array>
+				<bean class="com.github.pagehelper.PageHelper">
+					<property name="properties">
+						<value>
+							dialect=mysql
+							reasonable=true
+						</value>
+					</property>
+				</bean>
+			</array>
+		</property>
+
+	</bean>
+
+	<!-- dao接口的位置 -->
+	<mybatis-spring:scan base-package="com.oracle.labor.dao" />
+
+	<!-- 事务注解驱动 -->
+	<tx:annotation-driven />
+
+	<!-- 扫描包 -->
+	<context:component-scan base-package="com.oracle.labor.dao,com.oracle.labor.service"></context:component-scan>
+
+
+</beans>

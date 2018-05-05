@@ -1,0 +1,23 @@
+A.MzTreeview
+{
+  font-size: 12px;
+  padding-left: 3px;
+}
+.MzTreeview
+{
+    FONT-SIZE: 12px;color: #000000;	
+}
+.MzTreeview:link {
+	FONT-SIZE: 12px; COLOR: #0E86C2;
+}
+.MzTreeview:visited {
+	FONT-SIZE: 12px; COLOR: #0E86C2;
+}
+.MzTreeview:active {
+	FONT-SIZE: 12px; COLOR: #0E86C2;
+}
+.MzTreeview:hover {
+	FONT-SIZE: 12px; COLOR: #0E86C2;
+}
+
+

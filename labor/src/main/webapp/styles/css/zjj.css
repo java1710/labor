@@ -1,0 +1,71 @@
+/*
+####################################################################
+#  名    称：应用开发中心CSS范例
+#  版本：1.0
+#  版权所有: 北京北控三兴信息技术有限公司
+#  制    作: 美工组
+#  说    明: 页面美化一律调用此文件，根据实际风格要求，修改现有样式；未涉及的样式请联系美工组或在本文尾部添加，添加时务必注明功能。
+#################################字间距##################################
+*/
+
+/*三个字和4个字对齐*/
+.zjj34 {
+	letter-spacing: 6px;
+}
+
+.zjj35 {
+	letter-spacing: 13px;
+}
+
+.zjj36 {
+	letter-spacing: 19px;
+}
+
+.zjj45 {
+	letter-spacing: 4px;
+}
+
+.zjj46 {
+	letter-spacing: 8px;
+}
+
+.zjj47 {
+	letter-spacing: 13px;
+}
+
+.zjj56 {
+	letter-spacing: 3px;
+}
+
+.zjj57 {
+	letter-spacing: 6px;
+}
+
+.zjj58 {
+	letter-spacing: 9px;
+}
+
+.zjj67 {
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.zjj68 {
+	letter-spacing: 5px;
+}
+
+.zjj69 {
+	letter-spacing: 8px;
+}
+
+
+.zjj78 {
+	letter-spacing: 2px;
+}
+
+.zjj79 {
+	letter-spacing: 4px;
+}
+.zjj90 {
+	letter-spacing: 1.2pt;
+}

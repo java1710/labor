@@ -1,0 +1,19 @@
+/*单元格的鼠标效果---罗浩*/
+<public:attach event="onmouseover" onevent="lhlist()" />
+<script language="javascript">
+function lhlist(){
+this.bgColor="#cccccc";/*鼠标悬浮时的颜色*/
+this.borderColor="#777777";/*鼠标悬浮时的边框颜色*/
+this.style.color="#000000";/*鼠标悬浮文字色*/
+}
+</script>
+
+
+<public:attach event="onmouseout" onevent="lhlistnormal()" />
+<script language="javascript">
+function lhlistnormal(){
+this.bgColor="#7A96DF";/*鼠标离开时的颜色*/
+this.borderColor="#3D4B6F";/*鼠标离开时的边框颜色*/
+this.style.color="#ffffff";/*鼠标离开文字色*/
+}
+</script>
